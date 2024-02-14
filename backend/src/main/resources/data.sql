@@ -22,3 +22,7 @@ INSERT INTO tb_offer (edition, start_Moment, end_Moment, course_id) VALUES ('2.0
 INSERT INTO tb_resource (title, description, position, img_Uri, type, offer_id) VALUES ('Trilha HTML', 'Trilha principal do curso', '1', 'https://upload.wikimedia.org/wikipedia/commons/6/66/De_Cursos_Digitales.png', 1, 1);
 INSERT INTO tb_resource (title, description, position, img_Uri, type, offer_id) VALUES ('Forum', 'Tire suas duvidas', '2', 'https://upload.wikimedia.org/wikipedia/commons/6/66/De_Cursos_Digitales.png', 2, 1);
 INSERT INTO tb_resource (title, description, position, img_Uri, type, offer_id) VALUES ('Lives', 'Lives exclusivas para a turma', '3', 'https://upload.wikimedia.org/wikipedia/commons/6/66/De_Cursos_Digitales.png', 0, 1);
+
+INSERT INTO tb_section (title, description, position, img_Uri, resource_id, prerequisite_id) VALUES('Capítulo 1', 'Historia do html', 1, 'https://upload.wikimedia.org/wikipedia/commons/6/66/De_Cursos_Digitales.png', 1, null);
+INSERT INTO tb_section (title, description, position, img_Uri, resource_id, prerequisite_id) VALUES('Capítulo 2', 'Tags do html', 2, 'https://upload.wikimedia.org/wikipedia/commons/6/66/De_Cursos_Digitales.png', 1, 1);
+INSERT INTO tb_section (title, description, position, img_Uri, resource_id, prerequisite_id) VALUES('Capítulo 3', 'Semantica do html', 3, 'https://upload.wikimedia.org/wikipedia/commons/6/66/De_Cursos_Digitales.png', 1, 2);
