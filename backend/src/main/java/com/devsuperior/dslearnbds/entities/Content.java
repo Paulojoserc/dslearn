@@ -1,12 +1,11 @@
 package com.devsuperior.dslearnbds.entities;
 
-import java.io.Serializable;
-
 import javax.persistence.Entity;
 import javax.persistence.Table;
+
 @Entity
 @Table(name = "tb_content")
-public class Content extends Lesson implements Serializable {
+public class Content extends Lesson {
 	private static final long serialVersionUID = 1L;
 
 	private String textContent;
@@ -36,5 +35,4 @@ public class Content extends Lesson implements Serializable {
 	public void setVideoUri(String videoUri) {
 		this.videoUri = videoUri;
 	}
-
 }
